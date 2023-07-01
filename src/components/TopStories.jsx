@@ -57,7 +57,7 @@ function TopStories(props) {
   useEffect(() => {
     document.title = `${
       props.section === "home" ? "" : section
-    } Headlines - News Wallah`;
+    } Headlines - Newsify`;
     async function fetchData() {
       try {
         let url = `https://api.nytimes.com/svc/topstories/v2/${props.section}.json?api-key=${props.apiKey}`;
@@ -65,7 +65,7 @@ function TopStories(props) {
         let parsedData = await data.json();
         setArticles(parsedData.results);
         setSection(parsedData.section);
-        document.title = `News Wallah - ${
+        document.title = `Newsify - ${
           props.section === "home" ? "" : section
         } Headlines`;
       } catch (error) {
