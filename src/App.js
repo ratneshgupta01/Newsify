@@ -7,30 +7,14 @@ import TopStories from "./components/TopStories";
 function App() {
   const apiKey = process.env.REACT_APP_API_KEY;
   const [categories] = useState([
-    "Arts",
-    "Automobiles",
-    "Books",
     "Business",
-    "Fashion",
-    "Food",
     "Health",
-    "Insider",
-    "Magazine",
     "Movies",
-    "Nyregion",
-    "Obituaries",
-    "Opinion",
     "Politics",
-    "RealEstate",
     "Science",
     "Sports",
-    "Sundayreview",
     "Technology",
     "Theater",
-    "T-magazine",
-    "Travel",
-    "Upshot",
-    "Us",
     "World",
   ]);
 
